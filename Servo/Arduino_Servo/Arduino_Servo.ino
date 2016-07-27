@@ -1,11 +1,11 @@
 #include <Servo.h>       //调用舵机函数库
 #include <SoftwareSerial.h>
 Servo myservo;     //创建一个舵机对象
-SoftwareSerial BLE_Shield(2,3);   //RX|TX
+SoftwareSerial BLE_Shield(4,5);   //RX|TX
 void setup() {
   // put your setup code here, to run once:
   BLE_Shield.begin(9600); 
-  myservo.attach(7);    //定义数字引脚7为舵机控制引脚
+  myservo.attach(9);    //定义数字引脚9为舵机控制引脚
   myservo.write(0);  //初始化舵机的位置
 }
 

@@ -10,7 +10,7 @@ import CoreBluetooth
 
 /* Services & Characteristics UUIDs */
 let BLEServiceUUID = CBUUID(string: "DF977B84-FC23-0A07-77D9-2E2C92AB1A27")
-let PositionCharUUID = CBUUID(string: "FF7BCE6D-5A8F-4FFA-8D20-8BF29999A5FB")
+let PositionCharUUID = CBUUID(string: "12345678-9ABC-DEF1-2345-6789ABCDEF12")
 let BLEServiceChangedStatusNotification = "kBLEServiceChangedStatusNotification"
 
 class BTService: NSObject, CBPeripheralDelegate {
